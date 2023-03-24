@@ -21,7 +21,7 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
   var today = dayjs();
-  $("#currentDay").text(today.format("MMM-DD-YYYY"));
+  $("#currentDay").text(today.format("MMMM-DD-YYYY"));
   var currentHour = dayjs().hour();
   console.log(currentHour);
   $(".time-block").each(function () {
