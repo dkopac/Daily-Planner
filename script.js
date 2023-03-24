@@ -20,6 +20,7 @@ $(function () {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+  $("currentDay").text(dayJs().format());
   var currentHour = dayjs().hour();
   console.log(currentHour);
   $(".time-block").each(function () {
@@ -41,6 +42,6 @@ $(function () {
     localStorage.setItem(time, value);
   });
   for (let i = 9; i < 18; i++) {
-    $(`#hour-${i} .description`).val(localStorage.getItem(`.hour-${i}`));
+    $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
   }
 });
