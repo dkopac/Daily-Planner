@@ -41,6 +41,6 @@ $(function () {
     localStorage.setItem(time, value);
   });
   for (let i = 9; i < 18; i++) {
-    $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
+    $(`#hour-${i} .description`).val(localStorage.getItem(`.hour-${i}`));
   }
 });
